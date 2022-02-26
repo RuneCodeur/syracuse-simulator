@@ -1,4 +1,5 @@
-syracuse simulator est un logiciel qui calcul automatiquement la conjecture de syracuse.
+syracuse simulator est une page web qui calcul automatiquement la conjecture de syracuse.
+disponible à la page suivante :  https://rackhamledev.github.io/syracuse-simulator/
 
 --------------------------
 la conjecture de syracuse est une suite d'entier naturel defini comme suit:
