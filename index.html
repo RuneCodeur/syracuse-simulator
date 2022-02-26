@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>SYRACUSE SIMULATOR</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body class=" d-flex flex-column align-items-center text-center m-5">
+        <header class="d-flex flex-column align-items-center">
+            <h1>SYRACUSE SIMULATOR</h1>
+            <p class="font-weight-bold">pour calculer la suite de syracuse de façon automatique</p>
+            <a href="https://fr.wikipedia.org/wiki/Conjecture_de_Syracuse" target="_blank" class=" d-flex mb-5"> c'est quoi la suite de syracuse ?</a>
+        </header>
+
+        <!-- par Rackham le Dev-->
+
+        <div>
+            <label for="value" class="font-weight-bold"> valeur de base</label>
+            <input type="number" id="value" value="1">
+            <br/>
+            <label for="increment" class="font-weight-bold">incrémentation</label>
+            <input type="number" id="increment" value="0" >
+            <br/>
+            <label for="speed" class="font-weight-bold">vitesse de calcul</label>
+            <input type="number" min="5" max="5000" step="100" id="speed" value="100">
+        </div>
+
+        <input type="button" id="start" value="lancer le simulateur" class="m-3 p-3 btn btn-primary" onclick="Start()">
+        
+        <input type="button" id="stop" value="stop" class=" m-3 p-3 btn btn-danger" onclick="Pause()" style="display: none;">
+
+        <div id="math" style="display: none;">
+            <p class="font-weight-bold m-0 mt-4">calcul en cours :</p>
+            <div class="h2" id="calcul"></div>
+
+            <p class="font-weight-bold m-0 mt-3">suite de calcul :</p>
+            <div id="suite"></div>
+
+            <p class="font-weight-bold m-0 mt-3">valeurs testés :</p>
+            <div id="old-value"></div>
+        </div>
+
+        <footer class="mt-5">
+            <p>proposé par Rackham le Dev</p>
+        </footer>
+
+    </body>
+    <script src="calcul.js"></script>
+</html>
